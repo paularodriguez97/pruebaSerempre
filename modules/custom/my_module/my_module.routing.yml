@@ -1,0 +1,39 @@
+my_module.my_users:
+  path: '/my_users'
+  defaults:
+    _title: 'My users'
+    _controller: '\Drupal\my_module\Controller\MyUsers::prueba'
+  requirements:
+    _access: 'TRUE'
+
+my_module.register:
+  path: 'user/register'
+  defaults:
+    _title: 'Register'
+    _form: '\Drupal\my_module\Form\Register'
+  requirements:
+    _permission: 'access_register'
+
+my_module.consult:
+  path: 'user/consult'
+  defaults:
+    _title: 'Consult'
+    _controller: '\Drupal\my_module\Controller\Consult::view'
+  requirements:
+    _permission: 'access_consult'
+
+my_module.consult_csv:
+  path: 'user/consult/excel'
+  defaults:
+    _title: 'Consult'
+    _controller: '\Drupal\my_module\Controller\Consult::csv'
+  requirements:
+    _permission: 'access_consult'
+
+my_module.import:
+  path: 'user/import'
+  defaults:
+    _title: 'Import'
+    _form: '\Drupal\my_module\Form\Import'
+  requirements:
+    _permission: 'access_import'

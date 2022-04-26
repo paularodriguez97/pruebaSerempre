@@ -1,0 +1,27 @@
+my_module.my_users:
+  title: 'My Users'
+  route_name: 'my_module.my_users'
+  description: 'Menu to go to the table of my users'
+  menu_name: main
+  weight: 1
+
+my_module.register:
+  title: 'Register'
+  route_name: 'my_module.register'
+  description: 'Menu to go to the page of my register'
+  menu_name: main
+  weight: 2
+
+my_module.consult:
+  title: 'Consult'
+  route_name: 'my_module.consult'
+  description: 'Menu to go to the page of my consult'
+  menu_name: main
+  weight: 3
+
+my_module.import:
+  title: 'Import'
+  route_name: 'my_module.import'
+  description: 'Menu to go to the page of my import'
+  menu_name: main
+  weight: 4

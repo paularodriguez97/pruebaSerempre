@@ -1,0 +1,6 @@
+<?php
+/**
+* @file
+* Module file for my module
+* Este módulo crea una página estática con un mensaje de bienvenida.
+*/

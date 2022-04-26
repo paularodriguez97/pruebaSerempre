@@ -1,0 +1,13 @@
+js_validate:
+  version: 1.19.3
+  js:
+    libraries/additional-methods.min.js: {}
+    libraries/jquery.validate.min.js: {}
+    libraries/validate.js: {}
+  # css:
+  #   theme:
+  #     libraries/json_tree_viewer/libs/jsonTree/jsonTree.css: {}
+  dependencies:
+      - core/jquery
+      - core/jquery.once
+      - core/drupalSettings

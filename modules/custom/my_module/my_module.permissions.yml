@@ -1,0 +1,14 @@
+'access_import':
+  title:           'Access to import page'
+  description:     'This permission allows access to activate an import page'
+  restrict access: TRUE
+
+'access_consult':
+  title:           'Access to consult page'
+  description:     'This permission allows access to activate an consult page'
+  restrict access: TRUE
+
+'access_register':
+  title:           'Access to register page'
+  description:     'This permission allows access to activate an register page'
+  restrict access: TRUE

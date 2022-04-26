@@ -1,0 +1,41 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall functions for the d8module module.
+ */
+
+use Drupal\Core\Database\Database;
+
+/**
+ * Implements hook_schema().
+ */
+function my_module_schema() {
+    $schema['my_users'] = [
+      'description' => 'My Users',
+      'fields' => [
+        'id' => [
+          'type' => 'serial',
+          'not null' => TRUE,
+        ],
+        'name' => [
+          'type' => 'text',
+          'length' => 32,
+          'not null' => TRUE,
+        ],
+      ],
+      'primary key' => ['id'],
+      'unique keys' => [
+        'id' => ['id'],
+      ],
+    ];
+  
+    return $schema;
+}
+
+  /**
+ * Implements hook_uninstall().
+ */
+function my_module_uninstall() {
+    db_drop_table('my_users');
+}
